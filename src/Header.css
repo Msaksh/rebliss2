@@ -1,0 +1,158 @@
+.getApp {
+    background-color: #1d5871;
+    border-radius: 50%;
+    /* padding: 5px; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 13px;
+    bottom: 50px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .getApp:hover {
+    background-color: #009292;
+  }
+  .getApp > span{
+    color: white;
+    /* border: 1px solid red; */
+}
+
+.getApp > img {
+  width: 30px;
+  height: 30px;
+  /* border: 1px solid  yellow; */
+  padding: 5px;
+  margin-left: 5px;
+}
+
+/* .header {
+    height: 14vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    font-family: 'Inter', sans-serif;
+    background-color: #009292 ;
+    border: 2px solid blue;
+ } */
+
+.header__logo {
+    min-width: 100px;
+    max-width: 150px;
+    object-fit: contain;
+    margin-left: 10%;
+}
+
+/* .header__nav {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid red;
+} */
+
+.header__optionName {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition-duration: 2s;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    color: #1d5871;
+}
+
+.header__optionName:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #009292;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .header__optionName:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  .header__option > a {
+    text-decoration: none;
+  }
+
+  .navbarToggle {
+    margin-left: 500px;
+    /* border: 2px solid red; */
+  }
+
+
+  .navdropdown {
+    margin-top:0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: linear-gradient(to right,#009292 , #1d5871);
+
+  }
+  .navdropdown > a {
+    color: white!important;
+  }
+
+  @media (max-width: 480px){
+    .header{
+      height: 100%;
+      /* border: 1px solid blue; */
+      width: 100%;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+    .header__logo {
+      max-width: 100px;
+      object-fit: contain;
+      margin-left: 0;
+      padding: 5px;
+  }
+
+    .header__nav{
+      /* flex-direction: column */
+      padding-top: 8px;
+      padding-bottom: 10px;
+      /* border: 2px solid red; */
+      width: 100%;
+    }
+    .header__optionName {
+      font-size: 0.5rem;
+      padding: 0;
+      text-align: center;
+    }
+    .getApp{
+      bottom: 150px;
+    }
+
+    .getApp > img {
+      width: 20px;
+      height: 20px;
+    }
+    .navbarToggle {
+      margin-left: 0px;
+      width: 100px;
+      /* border: 2px solid red; */
+    }
+
+  }
+
+  @media (min-width: 1280px) {
+        .navbar-collapse {
+          padding-left: 50px
+        }
+  }

@@ -1,0 +1,43 @@
+.tc {
+    color: rgb(16, 76, 16);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    /* background-color: rgb(240, 240, 240); */
+    box-shadow: 0px 0px 10px rgb(198, 198, 198) ;
+}
+
+.tc > h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+}
+
+.tc > p {
+    line-height: 1.5;
+    font-size: 1.1rem;
+    word-break: normal;
+    word-wrap: break-word;
+}
+
+.tc_bullets {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+.tc > h2 {
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.tc > h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
