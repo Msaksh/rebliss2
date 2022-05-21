@@ -1,25 +1,33 @@
-  .blog_main{
-    width: 100%;
-    height: 100%;
-    background-color: whitesmoke;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    /* border: 2px solid red; */
-    padding-left: 100px;
-  }
+/* .blog {
+  background: #1d5871d6;
+  padding: 20px;
+  background-image: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928");
+} */
+.blog > h1 {
+  text-align: center;
+  padding: 30px;
+  font-size: 3rem;
+  color: #1d5871;
+  /* border-bottom: 2px solid #009292; */
+}
 
-  @media (max-width: 700px) {
-      .blog_main{
-        grid-template-columns: auto auto;
-        padding-left: 10px;
-      }
-  }
 
-  @media (max-width: 480px) {
-      .blog_main {
-        grid-template-columns: auto;
-        /* margin: auto; */
-        padding-left: 40px;
-      }
+.blog > section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* border: 2px solid red; */
+  margin: auto;
+}
+
+/* @media only screen and (max-width: 480px) {
+  .blog section {
+    grid-template-columns: auto;
   }
+}
+
+@media only screen and (min-width : 480px) {
+  .blog section {
+    background-color: red;
+    grid-template-columns: auto auto;
+  }
+} */
