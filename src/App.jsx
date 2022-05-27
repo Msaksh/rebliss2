@@ -14,59 +14,73 @@ import Merchantform from "./components/Merchantform";
 import Login from "./Login";
 import TC from "./components/TC";
 import Privacypolicy from "./components/Privacypolicy";
+import Training from "./components/Training";
 // import playStoreIcon from "./images/playStoreIcon.png";
 
 function App() {
-	return (
-		<Router>
-			<div className="app">
-				<Routes>
-					<Route path="/home" element={[<Header />, <Home />, <Footer />]} />
-					<Route
-						path="/getapp"
-						element={[<Header />, <Getapp />, <Footer />]}
-					/>
-					<Route
-						path="/aboutUs"
-						element={[<Header />, <AboutUs />, <Footer />]}
-					/>
-					<Route path="/blog" element={[<Header />, <Blog />, <Footer />]} />
-					<Route
-						path="/contactus"
-						element={[<Header />, <ContactUs />, <Footer />]}
-					/>
+    return (
+        <Router>
+            <div className="app">
+                <Routes>
+                    <Route
+                        path="/home"
+                        element={[<Header />, <Home />, <Footer />]}
+                    />
+                    <Route
+                        path="/getapp"
+                        element={[<Header />, <Getapp />, <Footer />]}
+                    />
+                    <Route
+                        path="/aboutUs"
+                        element={[<Header />, <AboutUs />, <Footer />]}
+                    />
+                    <Route
+                        path="/blog"
+                        element={[<Header />, <Blog />, <Footer />]}
+                    />
+                    {/* <Route
+                        path="/training"
+                        element={[<Header />, <Training />, <Footer />]}
+                    /> */}
+                    <Route
+                        path="/contactus"
+                        element={[<Header />, <ContactUs />, <Footer />]}
+                    />
 
-					<Route path="/" element={[<Header />, <Home />, <Footer />]} />
+                    <Route
+                        path="/"
+                        element={[<Header />, <Home />, <Footer />]}
+                    />
 
-					<Route
-						path="/dpform"
-						element={[<Header />, <Dpform />, <Footer />]}
-					/>
-					<Route
-						path="/merchantform"
-						element={[<Header />, <Merchantform />, <Footer />]}
-					/>
-					<Route
-						path="/saathiform"
-						element={[<Header />, <Saathiform />, <Footer />]}
-					/>
-					<Route
-						path="/userlogin"
-						element={[<Header />, <Login />, <Footer />]}
-					/>
+                    <Route
+                        path="/dpform"
+                        element={[<Header />, <Dpform />, <Footer />]}
+                    />
+                    <Route
+                        path="/merchantform"
+                        element={[<Header />, <Merchantform />, <Footer />]}
+                    />
+                    <Route
+                        path="/saathiform"
+                        element={[<Header />, <Saathiform />, <Footer />]}
+                    />
+                    <Route
+                        path="/userlogin"
+                        element={[<Header />, <Login />, <Footer />]}
+                    />
 
-					<Route
-						path="/terms&conditions"
-						element={[<Header />, <TC />, <Footer />]}
-					/>
-					<Route
-						path="/privacypolicy"
-						element={[<Header />, <Privacypolicy />, <Footer />]}
-					/>
-				</Routes>
-			</div>
-		</Router>
-	);
+                    <Route
+                        path="/terms&conditions"
+                        element={[<Header />, <TC />, <Footer />]}
+                    />
+                    <Route
+                        path="/privacypolicy"
+                        element={[<Header />, <Privacypolicy />, <Footer />]}
+                    />
+                </Routes>
+            </div>
+        </Router>
+    );
 }
 
 export default App;

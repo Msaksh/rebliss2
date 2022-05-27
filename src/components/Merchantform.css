@@ -54,7 +54,7 @@
   }
   
   .merchant_width{
-    color: #9d58fd;
+    color: #009292;
     text-align:center!important;
     font-size: 40px;
   }
@@ -71,9 +71,12 @@
   }
   
   .button_color{
-  background-color: #7942d9!important;
+  background-color: #009292!important;
   width:100%;
   margin-top: 22px;
+  }
+  .button_color:hover{
+    background-color: #1d5871!important;
   }
   
   .img_style_sathi{

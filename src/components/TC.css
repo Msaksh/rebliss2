@@ -1,11 +1,10 @@
 .tc {
-    color: rgb(16, 76, 16);
     width: 90%;
-    margin: auto;
-    margin-bottom: 20px;
-    padding: 20px;
-    /* background-color: rgb(240, 240, 240); */
-    box-shadow: 0px 0px 10px rgb(198, 198, 198) ;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 30px;
+    background:linear-gradient(to right, #009292, #1d5871);
+    color: #fff;
 }
 
 .tc > h1 {
@@ -14,7 +13,7 @@
     text-align: center;
     padding: 20px;
 }
-
+    
 .tc > p {
     line-height: 1.5;
     font-size: 1.1rem;

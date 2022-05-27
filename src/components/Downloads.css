@@ -1,7 +1,8 @@
 .downloads {
-    background:linear-gradient(to right, #009292, #1D5871) ;
-    /* color: rgb(146, 197, 146); */
+    background:linear-gradient(to right, #007171a6, #0a1f28cc),url("../images/CollaageCroped2-min.jpg");
+    background-position: center;
     color: white;
+    height: 100vh;
     padding: 30px;
     font-size: 2rem;
     font-weight: 900;
@@ -14,48 +15,56 @@
     align-items: center;
     justify-content: space-evenly;
     /* border: 2px solid red; */
-    margin-top: 50px;
+    margin-top: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .flexBox {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border: 2px solid blue; */
+    flex-direction: column;
 }
 
-.flexBox p {
+.flexBox >p {
     padding: 10px;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    /* border: 1px solid red; */
+
 }
 
 .downloads_headingNum {
     font-size: 4rem;
 }
 
-.downloads_heading p span {
-    font-size: 4rem;
-}
-
 .downloads_headingPlus {
     animation: magnify 1s infinite ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    margin-left: -10px; 
+    margin-left: 10px;    
+    font-size: 3rem;  
     /* border: 1px solid red; */
 }
-/*  */
+
+.downloads_column {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+
 @keyframes magnify {
     0% { transform: skewY(-15deg); }
- 5% { transform: skewY(15deg); }
- 10% { transform: skewY(-15deg); }
- 15% { transform: skewY(15deg); }
- 20% { transform: skewY(0deg); }
- 100% { transform: skewY(0deg); }
+    5% { transform: skewY(15deg); }
+    10% { transform: skewY(-15deg); }
+    15% { transform: skewY(15deg); }
+    20% { transform: skewY(0deg); }
+    100% { transform: skewY(0deg); }
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     
     .downloads {
         font-size: 1.3rem;

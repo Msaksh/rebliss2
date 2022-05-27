@@ -12,7 +12,8 @@
 }
 
 .operating > span{
-    background: linear-gradient(to right, rgb(239, 239, 239), white);
+    background:linear-gradient(to right, #009292, #1d5871);
+    color: white;
     width: 100%;
     font-size: 2.5rem;
     padding-top: 30px;

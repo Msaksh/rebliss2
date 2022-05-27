@@ -1,7 +1,10 @@
 .contact_formHeading {
   background-color: rgb(249, 249, 249);
   background-image: url("../images/contact.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 2px solid red; */
+  padding-bottom: 100px;
 
 }
 
@@ -21,7 +24,7 @@
   display: flex;
   justify-content: center;  
   padding-top: 60px;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
   color: #1d5871;
   align-items: center;
   
@@ -40,7 +43,7 @@
   /* border: 2px solid yellow; */
   height: 100%;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px grey;
+  box-shadow: 0px 0px 10px #0092928e;
   padding: 30px;
   margin-left: 400px;
 
@@ -79,15 +82,13 @@
 @media (max-width: 600px) {
 
   .contact_formHeading {
-    background-image: none;
+    background-position:right;
   }
   .contact_form{
     flex-direction: column;
     height: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    /* background-image: url("../images/contact.jpg");
-  background-size: cover;  */
   }
 
   .contact_form > form {
