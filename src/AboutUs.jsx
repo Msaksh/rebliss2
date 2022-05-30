@@ -10,8 +10,8 @@ function AboutUs() {
                 <p>
                     reBLISS is your one-stop destination for freelancing. We
                     understand that seeking jobs door to door is exhausting and
-                    hectic. Hence, we here at Rebliss, a B2B company provide you
-                    freelancing opportunities at the comfort of your home.
+                    hectic. Hence, we here at reBLISS, a B2B company provides
+                    you freelancing opportunities.
                 </p>
                 <p>
                     reBLISS is the platform mediating between the In-demand

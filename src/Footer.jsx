@@ -2,7 +2,6 @@ import React from "react";
 import "./Footer.css";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import logo from "./images/logo.png";
@@ -17,43 +16,73 @@ function Footer() {
     let year = date.getFullYear();
     console.log(year);
 
+    function handleClick() {
+        alert("Coming Soon.....");
+    }
+
     return (
         <div className="footer" id="footer">
             <div className="top">
                 <Whatsapp />
                 <Link to="/getapp">
                     <div className="header__option getApp">
-                        {/* <span className="header__optionName">Get App</span> */}
                         <img src={playStoreIcon} alt="" />
                     </div>
                 </Link>
-                <div className="top1 top_options">
-                    <a
-                        href="http://103.127.29.253/payroll/Emplogin.aspx?id=29"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        Employee Login
-                    </a>
-                </div>
 
-                <div className="footer__contactUsBottom">
-                    <h1>Address</h1>
+                <div className="footer_ql footer_flexbox padd">
+                    <h1>QUICK LINKS</h1>
 
-                    <div className="footer__addressBox">
-                        <p>
-                            reBLISS, A-108, I-thum Tower Noida
-                            <br />
-                            Sector 62, 201301
-                        </p>
+                    <div className="footer_divs">
+                        <Link to="/">
+                            <span>HOME</span>
+                        </Link>
+                        <Link to="/aboutUs">
+                            <span>ABOUT US</span>
+                        </Link>
+                        <Link to="/blog">
+                            <span>BLOGS</span>
+                        </Link>
+                        <Link to="/">
+                            <span onClick={handleClick}>TRAINING</span>
+                        </Link>
+                        <Link to="/contactus">
+                            <span>CONTACT US</span>
+                        </Link>
                     </div>
                 </div>
 
-                <div className="top3">
-                    <div className="footer__contactUsTop">
-                        <h1>Follow Us</h1>
+                <div className="footer_benefits footer_flexbox padd">
+                    <h1>BENEFITS</h1>
+                    <div className="footer_divs">
+                        <span className="saathiSpan">SAATHI</span>
+                        <span className="tsmSpan">TSM</span>
+                        <span className="merchantSpan">MERCHANT</span>
+                        <span className="merchantSpan">PARTNER</span>
+                    </div>
+                </div>
 
-                        <div className="follow_names">
+                <div className="footer_lastbox">
+                    <div className="footer_address marg">
+                        <h1>ADDRESS</h1>
+
+                        <div className="footer__addressBox">
+                            <p>
+                                reBLISS, A-108, I-thum Tower Noida
+                                <br />
+                                Sector 62, 201301
+                            </p>
+                        </div>
+                    </div>
+                    <div className="footer_contact marg">
+                        <h1>CONTACT US</h1>
+                        <p> Phone No - 09289046988</p>
+                        <p>Email Us - customercare@rebliss.in</p>
+                    </div>
+
+                    <div className="footer_follow marg">
+                        <h1>FOLLOW US</h1>
+                        <div className="">
                             <a
                                 href="https://www.linkedin.com/company/rebliss-in/"
                                 target={"_blank"}
@@ -95,8 +124,23 @@ function Footer() {
             </div>
 
             <div className="footerBottom">
-                <div className="footer__copyright">&copy; {year}</div>
-                <img className="footer__logo" src={logo} alt="reBLISS icons" />
+                <a
+                    className="footer_empl"
+                    href="http://103.127.29.253/payroll/Emplogin.aspx?id=29"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Employee Login
+                </a>
+
+                <div className="footer__copyright">
+                    &copy; {year}
+                    <img
+                        className="footer__logo"
+                        src={logo}
+                        alt="reBLISS icons"
+                    />
+                </div>
                 <Link to={"/terms&conditions"} className="footerBottom_tcpp">
                     <div className="footer__tc">Terms & Conditions</div>
                 </Link>

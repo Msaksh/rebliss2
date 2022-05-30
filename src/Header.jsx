@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logo from "./images/logo.png";
 // import playStoreIcon from "./images/playStoreIcon.png";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-import playstorebtn from "./images/playstorebtn.png";
+// import playstorebtn from "./images/playstorebtn.png";
 
 function Header() {
     function handleClick() {

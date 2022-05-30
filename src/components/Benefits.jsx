@@ -4,6 +4,7 @@ import WebhookSharpIcon from "@mui/icons-material/WebhookSharp";
 
 import last from "../images/IMAGES/last.png";
 import top from "../images/IMAGES/top.png";
+import mid from "../images/IMAGES/mid.png";
 import tsmMobile from "../images/IMAGES/tsmMobile.png";
 import saathiM from "../images/IMAGES/saathiM.png";
 import merchantM from "../images/IMAGES/merchantM.png";
@@ -24,6 +25,7 @@ function Benefits() {
                 <div
                     className="benefits_Sathi benefits_pointsSection"
                     data-aos="fade-right"
+                    id="saathi"
                 >
                     <div className="benefits_Info">
                         <span className="benefits_Underline">SAATHI</span>
@@ -47,7 +49,7 @@ function Benefits() {
                     </div>
 
                     <div className="benefitsImg">
-                        <img className="last" src={last} alt="circle1" />
+                        <img className="last" src={mid} alt="circle1" />
                         <img className="front" src={top} alt="circle2" />
                         <img className="Mobile saathiM" src={saathiM} alt="" />
                         <img className="Girl saathiG" src={saathiGirl} alt="" />
@@ -59,7 +61,7 @@ function Benefits() {
                     data-aos="fade-left"
                 >
                     <div className="benefitsImg">
-                        <img className="last" src={last} alt="circle1" />
+                        <img className="last" src={mid} alt="circle1" />
                         <img className="front" src={top} alt="circle2" />
                         <img className="Mobile tsmM" src={tsmMobile} alt="" />
                         <img className="Girl tsmG" src={tsmGirl} alt="" />
@@ -102,7 +104,7 @@ function Benefits() {
                         </h1>
                     </div>
                     <div className="benefitsImg">
-                        <img className="last" src={last} alt="circle2" />
+                        <img className="last" src={mid} alt="circle2" />
                         <img className="front" src={top} alt="circle1" />
                         <img
                             className="Mobile partnerM"
@@ -122,7 +124,7 @@ function Benefits() {
                     data-aos="fade-left"
                 >
                     <div className="benefitsImg">
-                        <img className="last" src={last} alt="circle2" />
+                        <img className="last" src={mid} alt="circle2" />
                         <img className="front" src={top} alt="circle1" />
                         <img
                             className="Mobile merchantM"
