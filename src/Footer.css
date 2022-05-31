@@ -1,5 +1,5 @@
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.833), rgba(0, 0, 0, 0.773)), url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background: linear-gradient(200deg ,rgba(0, 0, 0, 0.921), rgba(6, 46, 68, 0.878)), url("./images/typograph.jpg");
     background-repeat: no-repeat;
     width:100%;
     background-size: cover;
