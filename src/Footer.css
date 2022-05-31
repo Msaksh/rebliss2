@@ -23,93 +23,16 @@
  padding-top: 20px;
  padding-bottom: 20px;
  margin-top: 40px;
- display: grid;
- grid-template-columns: auto auto auto auto;
+
 }
 
-.footerBottom > div {
-    padding-left: 20px;
-    padding-right: 20px;
-    border-left: 1px solid #009292;
-}
-
-.footerBottom > div> img {
-    width: 100px;
-    padding-left: 10px;
-}
-
-.footer__logo {
-    width: 100px;
-    margin-right: 10px;
-}
-.footer__formOptions {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    outline: none;
-    font-size: large;
-}
-
-.footer__form > button{
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(0, 58, 0) ;
-    border: none;
-    color: #ecfff1;
-    cursor: pointer;
-    font-size: 1.1rem;
-}
-
-.footer__contactUs {
-    color: white;
-    padding: 10px;
-    width: 300px;
-    text-align: center;
-}
-
-.footer__contactUsTop {
-    /* border-bottom: 1px solid #009292; */
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    /* border: 1px solid red; */
-    padding-top: 10px;
-}
-
-.footer__contactUsTop > h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    /* color: rgb(146, 197, 146); */
-}
-
-.footer__contactUsBottom>h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    font-weight: 600    ;
-}
-
-.footer__contactUsBottom {
-    width: 30%;
-    /* border: 1px solid blue; */
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-    
-
-.footer__icons {
-    border-radius: 50%;
-    padding: 5px;
-    margin: 4px;
-}
-.footer__icons:hover {
-    transform: scale(1.3);
-}
+.footerBottom_insideDiv{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* border: 2px solid blue; */
+    width: fit-content;
+    margin: auto;
+}    
 
 .footer__addressBox {
     display: flex;
@@ -117,35 +40,10 @@
     align-items: center;
 }
 
-.top {
-    display: flex;
-    justify-content: flex-start;
-    /* border: 2px solid red; */
-}
-
-.top1 {
-    display: flex;
-    flex-direction: column;
-    /* border: 2px solid red; */
-    height: 40px;
-    width: 10%;
-}
-
-
 .top{
     display: flex;
     justify-content: space-evenly;
     /* border: 2px solid green; */
-}
-
-
-
-
-.top3 {
-    width: 30%;
-    text-align: center;
-    padding-top:10px;
-    /* border: 1px solid red; */
 }
 
 .footerBottom_tcpp {
@@ -153,36 +51,6 @@
     margin:4px;
     padding-left: 10px;
     border-left :1px solid #009292;
-}
-
-.follow_names {
-    /* border: 2px solid red; */
-    width: 50%;
-    margin: auto;
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.follow_names > a {
-    /* padding-right: 10px; */
-    /* border-right: 1px solid rgb(0, 58, 0); */
-    text-decoration: none;
-}
-
-.follow_names  a:nth-child(1):hover {
-    /* background-color: #2e66df; */
-    color: rgb(0, 110, 255);
-}
-.follow_names  a:nth-child(2):hover {
-    /* background-color: white; */
-    color: #2e66df;
-}
-.follow_names  a:nth-child(3):hover {
-    color: rgb(255, 115, 0);
-}
-.follow_names  a:nth-child(5):hover {
-    color: red;
 }
 
 .whatsapp_widget_wrapper {
@@ -198,18 +66,9 @@
     justify-content: center;
 }
 
-.footer_empl {
-        text-decoration: none;
-        background: linear-gradient(to right, #009292, #1d5871);
-        border-radius: 5px;
-        text-align: center;
-        margin: auto;
-        padding: 5px;
+.footer__copyright > p{
+    padding-left: 5px;
 }
-.footer_empl:hover {
-    background: linear-gradient(to right, #1d5871, #009292);
-}
-
 
 .footer_flexbox{
     display: flex;
@@ -232,6 +91,11 @@
 /* .footer_divs > a > span {
     border: 2px solid purple;
 } */
+
+.footer_divs > a > span:hover{
+    letter-spacing: 3px;
+}
+
 .footer_divs span {
     /* border: 2px solid violet; */
     letter-spacing: 2px;
@@ -295,10 +159,15 @@
     border: 2px solid orangered ;
 } */
 
+.gridFlexbox:hover {
+    color: #00b6b6;
+}
 
 .footer_follow .MuiSvgIcon-root:hover {
     color: #00b6b6;
 }
+
+
 
     @media (max-width: 600px) {
         .footer{
@@ -326,7 +195,7 @@
             width: 100%;
             font-size: 0.7rem;
             /* border: 2px solid blue; */
-            grid-template-columns: auto auto;
+            /* grid-template-columns: auto auto auto; */
         }
     
         .footer__contactUsBottom {
@@ -362,5 +231,10 @@
         .footer_follow .MuiSvgIcon-root {
             /* border: 2px solid white; */
             margin: 5px;
+        }
+
+        .footer__copyright {
+            /* border: 2px solid red; */
+            flex-direction: row;
         }
     }

@@ -106,6 +106,15 @@ function Header() {
                                 <NavDropdown.Item>
                                     <Link to="/userlogin">Login</Link>
                                 </NavDropdown.Item>
+
+                                <a
+                                    className="header_empl"
+                                    href="http://103.127.29.253/payroll/Emplogin.aspx?id=29"
+                                    target="_blank"
+                                    rel="external"
+                                >
+                                    Employee Login
+                                </a>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>

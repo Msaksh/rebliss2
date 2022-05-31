@@ -2,11 +2,11 @@ import React from "react";
 import "./Blog.css";
 import Blogcard from "./Blogcard";
 // import Image1 from "https://unsplash.com/photos/hjwKMkehBco";
-import growth from "../images/blogs/growth.png";
-import future from "../images/blogs/future.png";
+import growth from "../images/blogs/growth.jpeg";
+import future from "../images/blogs/future.jpeg";
 import women from "../images/blogs/women.png";
-import benefits from "../images/blogs/benefits.png";
-import logo from "../images/logo.png";
+import benefits from "../images/blogs/benefits.jpeg";
+import logo from "../images/logoCroped.png";
 
 const data = [
     {

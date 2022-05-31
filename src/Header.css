@@ -107,6 +107,18 @@
     color: #009292;
   }
   
+  .header_empl {
+    background: linear-gradient(to right, #009292, #1d5871);
+    color: white;
+    padding: 4px;
+    border-radius: 3px;
+    margin-left: 16px;
+  }
+
+  .header_empl:hover {
+    color: white;
+    background: linear-gradient(to right, #1d5871, #009292); 
+  }
   @media (max-width: 600px){
     .header{
       height: 100%;

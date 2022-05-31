@@ -4,7 +4,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TelegramIcon from "@mui/icons-material/Telegram";
-import logo from "./images/logo.png";
 import { Link } from "react-router-dom";
 import Whatsapp from "./components/Whatsapp";
 import YouTubeIcon from "@mui/icons-material/YouTube";
@@ -124,29 +123,30 @@ function Footer() {
             </div>
 
             <div className="footerBottom">
-                <a
-                    className="footer_empl"
-                    href="http://103.127.29.253/payroll/Emplogin.aspx?id=29"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    Employee Login
-                </a>
-
-                <div className="footer__copyright">
-                    &copy; {year}
-                    <img
+                <div className="footerBottom_insideDiv">
+                    <div className="footer__copyright gridFlexbox">
+                        &copy; {year}
+                        <p>reBLISS</p>
+                        {/* <img
                         className="footer__logo"
                         src={logo}
                         alt="reBLISS icons"
-                    />
+                    /> */}
+                    </div>
+                    <Link
+                        to={"/terms&conditions"}
+                        className="footerBottom_tcpp"
+                    >
+                        <div className="footer__tc gridFlexbox">
+                            Terms & Conditions
+                        </div>
+                    </Link>
+                    <Link to={"/privacypolicy"} className="footerBottom_tcpp">
+                        <div className="footer__tc gridFlexbox">
+                            Privacy Policy
+                        </div>
+                    </Link>
                 </div>
-                <Link to={"/terms&conditions"} className="footerBottom_tcpp">
-                    <div className="footer__tc">Terms & Conditions</div>
-                </Link>
-                <Link to={"/privacypolicy"} className="footerBottom_tcpp">
-                    <div className="footer__tc">Privacy Policy</div>
-                </Link>
             </div>
         </div>
     );

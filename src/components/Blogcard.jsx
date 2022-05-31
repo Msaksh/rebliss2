@@ -7,7 +7,11 @@ function Blogcard({ item }) {
     const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded });
     return (
         <div className="blogcard">
-            <img src={item.img} alt="" />
+            <img
+                src={item.img}
+                alt="blogRelatedImages"
+                className="blogImages"
+            />
             <div className="blogcard_body">
                 <h2>{item.heading}</h2>
                 <p>{item.para} </p>
