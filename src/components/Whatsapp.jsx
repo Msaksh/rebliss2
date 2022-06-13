@@ -12,9 +12,7 @@ function Whatsapp() {
                 widgetWidth="300px"
                 widgetWidthMobile="260px"
                 autoOpen={false}
-                // autoOpenTimer={5000}
                 messageBox={true}
-                // messageBoxTxt="Hi Team, is there any related service available ?"
                 iconSize="40"
                 iconColor="white"
                 iconBgColor="#009292"

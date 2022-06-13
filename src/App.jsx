@@ -8,13 +8,17 @@ import Blog from "./components/Blog";
 import ContactUs from "./components/ContactUs";
 import Getapp from "./components/Getapp";
 // import { Link } from "react-router-dom";
-import Dpform from "./components/Dpform";
-import Saathiform from "./components/Saathiform";
 import Merchantform from "./components/Merchantform";
 import Login from "./Login";
 import TC from "./components/TC";
 import Privacypolicy from "./components/Privacypolicy";
 import Training from "./components/Training";
+import UserDashboard from "./components/login/UserDashboard";
+import Registeration from "./components/login/Registeration";
+import Otpver from "./components/login/Otpver";
+import Password from "./components/login/Password";
+import Joinas from "./components/login/Joinas";
+import AfterJoin from "./components/login/AfterJoin";
 // import playStoreIcon from "./images/playStoreIcon.png";
 
 function App() {
@@ -53,16 +57,12 @@ function App() {
                     />
 
                     <Route
-                        path="/dpform"
-                        element={[<Header />, <Dpform />, <Footer />]}
-                    />
-                    <Route
                         path="/merchantform"
                         element={[<Header />, <Merchantform />, <Footer />]}
                     />
                     <Route
-                        path="/saathiform"
-                        element={[<Header />, <Saathiform />, <Footer />]}
+                        path="/registeration"
+                        element={[<Header />, <Registeration />, <Footer />]}
                     />
                     <Route
                         path="/userlogin"
@@ -77,6 +77,18 @@ function App() {
                         path="/privacypolicy"
                         element={[<Header />, <Privacypolicy />, <Footer />]}
                     />
+
+                    <Route path="/userdashboard" element={<UserDashboard />} />
+                    <Route
+                        path="/otpver"
+                        element={[<Header />, <Otpver />, <Footer />]}
+                    />
+                    <Route
+                        path="/createpass"
+                        element={[<Header />, <Password />, <Footer />]}
+                    />
+                    <Route path="/joinas" element={<Joinas />} />
+                    <Route path="/afterjoin" element={<AfterJoin />} />
                 </Routes>
             </div>
         </Router>

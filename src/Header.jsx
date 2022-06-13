@@ -2,14 +2,13 @@ import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import logo from "./images/logo.png";
-// import playStoreIcon from "./images/playStoreIcon.png";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-// import playstorebtn from "./images/playstorebtn.png";
 
 function Header() {
     function handleClick() {
         alert("Coming Soon.....");
     }
+
     return (
         <div className="header">
             <Navbar expand="lg">
@@ -27,6 +26,7 @@ function Header() {
                         style={{ marginLeft: "-5px" }}
                     >
                         <Nav className="me-auto navbarToggle">
+                            <div id="google_translate_element" />
                             <Link to="/">
                                 <div className="header__option">
                                     <span className="header__optionName">
@@ -66,17 +66,6 @@ function Header() {
                                 </div>
                             </Link>
 
-                            {/* <Link to="/getapp">
-                                <div className="header__option getAppHeader">
-                                    <span className="header__optionName">
-                                        <img
-                                            src={playstorebtn}
-                                            alt="playstore"
-                                        />
-                                    </span>
-                                </div>
-                            </Link> */}
-
                             <NavDropdown
                                 className="navdropdown btn ml-4 "
                                 title="Login"
@@ -89,29 +78,28 @@ function Header() {
                                 }}
                             >
                                 <NavDropdown.Item>
-                                    <Link to="/saathiform">Saathi</Link>
+                                    <Link to="/registeration">
+                                        <p>Registration</p>
+                                    </Link>
                                 </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/saathiform">TSM</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to="/saathiform">Partner</Link>
-                                </NavDropdown.Item>
+                                {/* <NavDropdown.Item>
+                                    <Link to="/userdashboard">
+                                        <p> UserDashboard</p>
+                                    </Link>
+                                </NavDropdown.Item> */}
 
                                 <NavDropdown.Item>
-                                    <Link to="/merchantform">Merchant</Link>
+                                    <Link to="/userlogin">
+                                        <p>Login</p>
+                                    </Link>
                                 </NavDropdown.Item>
-
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item>
-                                    <Link to="/userlogin">Login</Link>
-                                </NavDropdown.Item>
 
                                 <a
                                     className="header_empl"
                                     href="http://103.127.29.253/payroll/Emplogin.aspx?id=29"
                                     target="_blank"
-                                    rel="external"
+                                    rel="noreferrer"
                                 >
                                     Employee Login
                                 </a>

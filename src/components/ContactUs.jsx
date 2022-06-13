@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./ContactUs.css";
-// import ContactUsImg from "../images/contactUsImage.jpg";
 
 function ContactUs() {
     const [name, setName] = useState("");
@@ -51,7 +50,6 @@ function ContactUs() {
         <div className="contact_formHeading">
             <h1 data-aos="zoom-out">CONTACT US</h1>
             <div className="contact_form">
-                {/* <img src={ContactUsImg} alt="contactUSImage" /> */}
                 <form
                     action="https://formsubmit.co/eb184dc1e693b0db15b078a6f793c9af"
                     method="POST"
@@ -100,24 +98,10 @@ function ContactUs() {
                         value={subject}
                         onChange={(e) => setSubject(e.target.value)}
                     />
-                    {/*<label for="textarea">Message</label>
-
-                     <textarea
-                        id="textarea"
-                        rows="2"
-                        cols="50"
-                        name="textarea"
-                        form="usrform"
-                        placeholder="Message"
-                        required
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                    >
-                        Enter text here...
-                    </textarea> */}
 
                     {/* below code is for not showing captcha page */}
                     <input type="hidden" name="_captcha" value="false"></input>
+
                     {/*  below code is for redirecting to the rebliss.in after clicking submit button */}
                     <input
                         type="hidden"

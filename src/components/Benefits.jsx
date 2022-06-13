@@ -1,8 +1,6 @@
 import React from "react";
 import "./Benefits.css";
 import WebhookSharpIcon from "@mui/icons-material/WebhookSharp";
-
-import last from "../images/IMAGES/last.png";
 import top from "../images/IMAGES/top.png";
 import mid from "../images/IMAGES/mid.png";
 import tsmMobile from "../images/IMAGES/tsmMobile.png";
@@ -17,14 +15,11 @@ import partnerM from "../images/IMAGES/partnerM.png";
 function Benefits() {
     return (
         <div className="benefits">
-            <h1 className="benefits_h1" data-aos="fade-down">
-                Benefits of Joining reBLISS
-            </h1>
+            <h1 className="benefits_h1">Benefits of Joining reBLISS</h1>
 
             <div className="benefits_points">
                 <div
                     className="benefits_Sathi benefits_pointsSection"
-                    data-aos="fade-right"
                     id="saathi"
                 >
                     <div className="benefits_Info">
@@ -56,10 +51,7 @@ function Benefits() {
                     </div>
                 </div>
 
-                <div
-                    className="benefits_Tsm benefits_pointsSection"
-                    data-aos="fade-left"
-                >
+                <div className="benefits_Tsm benefits_pointsSection">
                     <div className="benefitsImg">
                         <img className="last" src={mid} alt="circle1" />
                         <img className="front" src={top} alt="circle2" />
@@ -71,11 +63,10 @@ function Benefits() {
                         <span className="benefits_Underline">TSM</span>
                         <h1>
                             <WebhookSharpIcon />
-                            Your own business in your city
+                            Your own business in your own city
                         </h1>
                         <h1>
-                            <WebhookSharpIcon /> From job seeker to the job
-                            provider
+                            <WebhookSharpIcon /> From job seeker to job provider
                         </h1>
                         <h1>
                             <WebhookSharpIcon /> Skill oriented tasks
@@ -86,10 +77,7 @@ function Benefits() {
                     </div>
                 </div>
 
-                <div
-                    className="benefits_Partner benefits_pointsSection"
-                    data-aos="fade-right"
-                >
+                <div className="benefits_Partner benefits_pointsSection">
                     <div className="benefits_Info">
                         <span className="benefits_Underline">PARTNER</span>
                         <h1>
@@ -119,10 +107,7 @@ function Benefits() {
                     </div>
                 </div>
 
-                <div
-                    className="benefits_Merchant benefits_pointsSection"
-                    data-aos="fade-left"
-                >
+                <div className="benefits_Merchant benefits_pointsSection">
                     <div className="benefitsImg">
                         <img className="last" src={mid} alt="circle2" />
                         <img className="front" src={top} alt="circle1" />

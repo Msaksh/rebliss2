@@ -7,7 +7,6 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import { Link } from "react-router-dom";
 import Whatsapp from "./components/Whatsapp";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-// import Getapp from "./components/Getapp";
 import playStoreIcon from "./images/playStoreIcon.png";
 
 function Footer() {
@@ -55,7 +54,7 @@ function Footer() {
                     <h1>BENEFITS</h1>
                     <div className="footer_divs">
                         <span className="saathiSpan">Saathi</span>
-                        <span className="tsmSpan">Tsm</span>
+                        <span className="tsmSpan">TSM</span>
                         <span className="merchantSpan">Merchant</span>
                         <span className="merchantSpan">Partner</span>
                     </div>
@@ -67,9 +66,9 @@ function Footer() {
 
                         <div className="footer__addressBox">
                             <p>
-                                reBLISS, A-108, I-thum Tower Noida
+                                reBLISS, A-108, I-thum Tower
                                 <br />
-                                Sector 62, 201301
+                                Sector 62, Noida, 201301
                             </p>
                         </div>
                     </div>
@@ -127,11 +126,6 @@ function Footer() {
                     <div className="footer__copyright gridFlexbox">
                         &copy; {year}
                         <p>reBLISS</p>
-                        {/* <img
-                        className="footer__logo"
-                        src={logo}
-                        alt="reBLISS icons"
-                    /> */}
                     </div>
                     <Link
                         to={"/terms&conditions"}

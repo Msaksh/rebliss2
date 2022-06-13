@@ -25,7 +25,6 @@ import GDIntern1 from "../images/OurTeam/GDIntern1.jpg";
 import DMIntern1 from "../images/OurTeam/DMIntern1.jpg";
 import ADIntern1 from "../images/OurTeam/ADIntern1.jpg";
 import ADIntern2 from "../images/OurTeam/ADIntern2.jpg";
-// import ADIntern3 from "../images/OurTeam/ADIntern3.jpg";
 import ADIntern4 from "../images/OurTeam/ADIntern4.jpg";
 import ADIntern5 from "../images/OurTeam/ADIntern5.jpg";
 import ADIntern6 from "../images/OurTeam/ADIntern6.jpg";
@@ -233,13 +232,7 @@ function Ourteam() {
                             alt="images"
                         />
                     </div>
-                    {/* <div className="ourteam_imgDiv m-auto" data-aos="zoom-in">
-                        <img
-                            className="auto w-40 rounded-2xl"
-                            src={ADIntern3}
-                            alt="images"
-                        />
-                    </div> */}
+
                     <div className="ourteam_imgDiv m-auto" data-aos="zoom-in">
                         <img
                             className="auto w-40 rounded-2xl"
@@ -285,8 +278,6 @@ function Ourteam() {
                 </div>
             </div>
         </>
-
-        // <div className="ourteam">body</div>
     );
 }
 

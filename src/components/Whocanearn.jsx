@@ -4,7 +4,6 @@ import saathiwce from "../images/Saathiwce.jpg";
 import Studentwce from "../images/Studentwce.jpg";
 import Selfwce from "../images/Selfwce.jpg";
 import Salariedwce from "../images/Salariedwce.jpg";
-import steps from "../images/steps.jpg";
 
 function Whocanearn() {
     return (

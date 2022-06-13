@@ -5,7 +5,6 @@
 .ourteam_imgDiv > img:hover {
     border-radius: 30%;
     transition-duration: 1s;
-    /* box-shadow: 0px 0px 10px rgb(168, 168, 168); */
     box-shadow: 0px 0px 10px #009292;
 }
  @media (max-width: 480px) {

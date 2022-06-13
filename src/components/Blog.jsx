@@ -1,7 +1,6 @@
 import React from "react";
 import "./Blog.css";
 import Blogcard from "./Blogcard";
-// import Image1 from "https://unsplash.com/photos/hjwKMkehBco";
 import growth from "../images/blogs/growth.jpeg";
 import future from "../images/blogs/future.jpeg";
 import women from "../images/blogs/women.png";
